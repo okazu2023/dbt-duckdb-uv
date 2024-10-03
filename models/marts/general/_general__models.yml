@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_survived_city__daily
+    description: "出港地ごとの生存者日次"
+    columns:
+      - name: num
+        description: "人数"
+      - name: embarked
+        description: "出港地（C＝Cherbourg：シェルブール、Q＝Queenstown：クイーンズタウン、S＝Southampton：サウサンプトン）"

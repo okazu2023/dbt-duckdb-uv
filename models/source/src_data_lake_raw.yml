@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: data_lake_raw
+    meta:
+      external_location: "data/data_lake/{name}.csv"
+    schema: data_lake_raw
+    tables:
+      - name: titanic3
+        description: "タイタニック号の乗客の生存に関する情報と、年齢やチケットのクラスなどの乗客の特徴を提供"
+        columns:
+          - name: pclass
+            description: "旅客クラス"
+          - name: survived
+            description: "生存状況（0＝死亡、1＝生存）"
+          - name: name
+            description: "氏名"
+          - name: sex
+            description: "性別"
+          - name: age
+            description: "年齢"
+          - name: sibsp
+            description: "タイタニック号に同乗している兄弟（Siblings）や配偶者（Spouses）の数"
+          - name: parch
+            description: "タイタニック号に同乗している親（Parents）や子供（Children）の数"
+          - name: ticket
+            description: "チケット番号"
+          - name: fare
+            description: "旅客運賃"
+          - name: cabin
+            description: "客室番号"
+          - name: embarked
+            description: "出港地（C＝Cherbourg：シェルブール、Q＝Queenstown：クイーンズタウン、S＝Southampton：サウサンプトン）"
+          - name: boat
+            description: "救命ボート番号"
+          - name: body
+            description: "遺体収容時の識別番号"
+          - name: home.dest
+            description: "自宅または目的地"
